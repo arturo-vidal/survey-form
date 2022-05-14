@@ -15,3 +15,6 @@ div{
     font-size: 20px;
     text-decoration: underline;
 }
+#name-label, #email-label, #number-label{
+    font-size: 30px;
+}

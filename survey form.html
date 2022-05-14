@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="survey fotm.css">
 </head>
 <body>
-    <div>
+    <div class="container-fluid">
         <h1 id="title">Register form</h1>
         <p id="description">Fill each field of this form</p>
         <form id="survey-form">
-          <label id="name-label" for="name">Name: </label><br>
-          <input id="name" type="text" placeholder="Name"><br><br>
-          <label id="email-label" for="email">Email: </label><br>
-          <input id="email" type="email" placeholder="Email"><br><br>
-          <label id="number-label" for="number">Number: </label><br>
-          <input id="number" type="number" min="0" max="50" placeholder="ID Number"><br><br> 
-          
+          <div class="row">
+            <label class="col-md-4" id="name-label" for="name">Name: </label><br>
+            <input class="col-md-6" id="name" type="text" placeholder="Name"><br><br>
+          </div>
+          <div class="row">
+            <label class="col-md-4" id="email-label" for="email">Email: </label><br>
+            <input class="col-md-6" id="email" type="email" placeholder="Email"><br><br>
+          </div>
+          <div class="row">
+          <label class="col-md-4" id="number-label" for="number">Number: </label><br>
+          <input class="col-md-6" id="number" type="number" min="0" max="50" placeholder="ID Number"><br><br> 
+          </div>
+
           <label for="dropdown">Grade: </label><br>
           <select id="dropdown">
             <option value="1st grade">1st grade</option>
@@ -53,7 +61,7 @@
           <input id="text-area" type="text" placeholder="text area">
           <br><br>
       
-          <input id="submit" type="submit" value="Done">
+          <button type="submit" class="btn btn-danger">Done</button>
       
         </form>
       </div> 
